@@ -17,8 +17,8 @@ strStairs("hello") -> [
 */
 let str = "hello";
 let arr = str.split();
-for (let i=1; i<str.length; i++) {
-    arr.splice(i, 1, str);
+for (let i=0; i<=str.length; i++) {
+    arr.splice(i, 1, (str));
     }
 console.log(arr);
 
