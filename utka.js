@@ -19,7 +19,7 @@ let str = "hello";
 let arr = str.split();
 for (let i=1; i<str.length; i++) {
     
-    arr.splice(i, 1, " ");
+    arr.splice(i, 1, str.replace(str.length-i, " "));
     }
 console.log(arr);
 
