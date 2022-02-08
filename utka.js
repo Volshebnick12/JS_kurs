@@ -15,20 +15,14 @@ strStairs("hello") -> [
     "    o"
 ]
 */
-// let str = "hello";
-// let arr = str.split();
-// for (let i=1; i<str.length; i++) {
-    
-//     arr.splice(i, 1, str.replace(str.length-i, " "));
-//     }
-// console.log(arr);
-
-
 let str = "hello";
+let arr = str.split();
 for (let i=1; i<str.length; i++) {
     
-    str.replace(str.length-i, " ");
+    arr.splice(i, 1, str.replace(str.length-1, " "));
     }
+console.log(arr);
+
 
 // for (let i=1; i<str.length; i++) {
 //         arr.splice(i, 1, str);
