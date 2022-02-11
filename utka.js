@@ -15,47 +15,12 @@ strStairs("hello") -> [
     "    o"
 ]
 */
+
+
 let str = "hello";
 let arr = str.split();
-for (let i=1; i<str.length; i++) {
-    
-    arr.splice(i, 1, str.replace(str.length-1, " "));
+for (let i=1; i<str.length; i++) { 
+str = str.replace(str[i-1], " ");
+    arr.splice(i, 1, str);
     }
 console.log(arr);
-
-
-// for (let i=1; i<str.length; i++) {
-//         arr.splice(i, 1, str);
-//     }
-// console.log(arr);
-
-
-// str = str + ",\n"+ str + ",\n"+str + ",\n"+str + ",\n"+str + ",\n";
-// console.log(str);
-// let arr = str.split();
-// for (let i=1; i<str.length; i++) {
-//     arr.splice(i, 1, str[i]);
-// }
-// console.log(arr);
-// ['hello', 'hello', 'hello', 'hello', 'hello']
-
-// let strStairs = "hello";
-// for (let i = 1; i < strStairs.length; i++) {
-
-// let str += strStairs;
-// strStairs = strStairs.concat(strStairs);
-// } 
-// let string = strStairs.split();
-// console.log(string);
-// strStairs = strStairs.concat(strStairs)
-
-// string.push(strStairs[i++]);
-// console.log(string);
-
-// for (let i = 1; i < strStairs.length; i++) {
-//        string.push(strStairs[i]);
-//     }
-// console.log(string);
-    
-
-// let stringNew = string.push(strStairs);
